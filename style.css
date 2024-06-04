@@ -1,0 +1,751 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    transition: .5s;
+
+}
+
+
+#header.header-scroll {
+    background-color: white;
+    padding: 10px 80px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+}
+
+
+.title {
+    font-size: 32px;
+    color: white;
+}
+
+#header.header-scroll .title{
+    color: black;
+}
+
+
+.title span { 
+    color: #ff0157;
+}
+
+
+nav .navbar-mobile {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+}
+nav .navbar-mobile li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0,3;
+
+}
+#header.header-scroll nav .navbar-mobile li a {
+    color: black;
+}
+nav .navbar-mobile li a:hover,
+#header.header-scroll nav .navbar-mobile li a:hover {
+    color: #ff0157;
+    
+}
+
+#home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(bg.jpg);
+}
+
+.box-home{
+    width: 60% ;
+    color: white;
+}
+
+.box-home h2{
+    font-size: 48px;
+    font-weight: 800;
+
+}
+
+.box-home p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.btn-home{
+    margin-top: 20px;
+}
+.btn-home a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff0157;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: 60s;
+    border-radius: 5px;
+}
+
+.btn-home a:hover{
+    letter-spacing: 100vh;
+
+}
+
+#about {
+    padding: 80px 120px;
+    display: flex;
+    gap: 50px;
+}
+
+.container-about-text, .container-about-img {
+    width: 50%;
+}
+
+
+.container-about-text h2 span {
+    color: #ff0157;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.container-about-text h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.container-about-text p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.container-about-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#menu {
+    padding: 80px 120px;
+}
+
+.container-menu-title {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.container-menu-title h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+.container-menu-title h2 span {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ff0157;
+}
+
+.container-menu-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+#menu {
+    text-align: center;
+}
+.card-menu {
+    padding: 18px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+}
+
+.card-menu h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 7px 0;
+}
+
+.card-menu img {
+    width: 250px;
+}
+
+.btn-menu{
+    margin-top: 20px;
+}
+.btn-menu a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff0157;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: 60s;
+    border-radius: 5px;
+}
+
+.btn-menu a:hover{
+    letter-spacing: 100vh;
+
+}
+
+#expert{
+    padding: 80px 120px;
+
+}
+
+.cointainer-expert-text {
+    text-align: center;
+    line-height: 1.5;
+}
+.cointainer-expert-text h2 span {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ff0157;
+}
+.cointainer-expert-text h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.cointainer-expert-text p {
+    line-height: 1.5;
+    text-align: justify;
+    text-align: center;
+}
+.cointainer-expert-img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    gap: 26px;
+    justify-content: center;
+}
+
+.card-expert{
+    padding: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3);
+}
+
+.card-expert img{
+    width: 250px;
+
+}
+
+.card-expert h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+
+}
+
+
+
+#testimonial{
+    min-height: 100vh;
+    padding:  80px 120px;
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-image: url(bg2.jpg);
+   background-position: center;
+}
+
+.container-about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    padding: 28px;
+}
+
+.container-about h2{
+    font-size: larger;
+    margin-top: 20px;
+    
+}
+
+.container-about-title  {
+    text-align: center;
+    line-height: 2;
+    color: white;
+}
+
+.container-about-title h2 {
+    font-size: 34px;
+    font-weight: 100px;
+    color: white;
+}
+
+.container-about-title h2 span {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ff0157;
+
+}
+
+.card-about-us {
+  text-align: center;
+    padding: 20px 20px;
+    width: 250px;
+    background-color: white;
+    margin-top: 5px;
+    font-size: 16px;  
+}
+
+.card-about-us img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card-about-us h2 {
+    color: #ff0157;
+}
+
+.card-about-us2 img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card-about-us2 {
+    text-align: center;
+    padding: 20px 20px;
+    width: 250px;
+    background-color: white;
+    margin-top: 5px;
+    font-size: 16px;
+    
+}
+
+.card-about-us2 h2{
+    color: #ff0157;
+}
+
+.card-about-us3 img {
+    width: 100px;
+   border-radius: 50%;
+}
+
+.card-about-us3 h2{
+    color: #ff0157;
+}
+
+.card-about-us3 {
+    text-align: center;
+    padding: 20px 20px;
+    width: 250px;
+    background-color: white;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+
+#contact {
+    min-height: 100vh;
+    padding:  80px 120px;
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-image: url(bg3.jpg);
+   background-position: center;
+}
+
+.contact-us-title h2{
+    font-size: 35px;
+}
+
+.contact-us-title span {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ff0157;
+}
+
+.sidebar form p{
+    text-align: left;
+
+}
+
+.sidebar {
+    margin-top: 30px;
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  form {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff0157;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  } 
+
+
+  footer{
+   text-align: center;
+
+  }
+
+  footer span{
+    color: #ff0157;
+  }     
+#container-about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 50px;
+    text-align: center;
+    background: url(bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-about-us-text {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    color: white;   
+}
+
+.container-about-text h2{
+    font-weight: 400;
+    
+}
+
+.container-about-us-img {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-about-us-text h2 span{
+    color: #ff0157;
+    font-size: 30px;
+}
+
+
+
+.container-about-us-img p {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-testi{
+    width: 250px;
+    height: 350px;  
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.card-testi img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.card-testi p{
+    margin-top: -20px;
+}
+
+.card-testi h2{
+    color: #ff0157;
+    font-size: 16px;
+    margin-top: -40px;
+}
+
+
+
+#contact{
+    background: url(bg3.jpg);
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    
+    background-size: cover;
+}
+
+.card-contact-us{
+    margin-top: 50px;
+    height: 400px;
+    width: 450px;   
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contact-about-text span {
+    font-size: 35px;
+    color: #ff0157;
+}
+
+.container-about-text{
+    color: black;
+    text-align: center;
+}
+
+.card-contact-us p{
+    font-weight: 500px;
+}
+
+.card-contact-us{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 380px;
+    padding: 5px;    
+}
+
+#name{
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+}
+
+#email{
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+}
+
+#message{
+        width: 300px;
+        height: 60px;
+        padding: 5px;
+}
+
+.btn-send a{
+    display: flex;
+    width: 100px;
+    color: white;
+    padding: 5px 15px;
+    
+    text-decoration: none;
+    margin-left: 35px;
+    background-color: #ff0157;
+}
+
+
+#contact{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(bg3.jpg);
+    text-align: center;
+    background-size: cover;
+}
+
+.container-contact-us{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.container-contact-us h2 span{
+    font-weight: 700;
+    color: #ff0157;
+    font-size: 52px;
+}
+
+.container-contact-us h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container-contact-us p{
+    font-size: 18px;
+}
+
+.form-contact-us{
+    display: flex;
+    padding: 50px;
+    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 80px;
+}
+
+.form-contact-us h2{
+    display: flex;
+    font-weight: 400;
+
+}
+
+#name{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 18px;
+}
+
+#email{
+    margin-top: 1px;
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+}
+
+#message{
+    width: 400px;
+    margin-top: 20px;
+    height: 100px;
+    padding: 20px;
+   
+    resize: none;
+}
+
+
+.btn-contact a{
+    display: flex;
+    width: 100px;
+    color: white;
+    padding: 10px 15px;
+    
+    text-decoration: none;
+    background-color: #ff0157;
+}
+
+footer{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p span{
+    font-size: 16px;
+    color: #ff0157;
+}
+
+
+@media (max-width: 1024px) {
+    #header {
+        padding: 10px;
+    }
+    nav .navbar-mobile{
+        display: none;
+    }
+
+    nav .navbar-mobile.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+
+    }
+    
+    .box-home{
+        font-size: 48px;
+
+    }
+    .box-home p {
+        font-size: 16px;
+
+    }
+    #header.header-scroll {
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        background-image: url('/assets/menu.png');
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .menu-toggle.active{
+        background-image: url('/assets/close.png');
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #header.header-scroll .menu-toggle{
+
+        filter: invert(1);
+    }
+    #header.header-scroll nav .navbar-mobile li a{
+        color: wheat;
+        }
+
+    #header.header-scroll .menu-toggle.active{
+        filter: invert(0);
+    }
+
+    #about {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .container-about-text, .container-about-img {
+        width: 100%;
+    }
+}
+
